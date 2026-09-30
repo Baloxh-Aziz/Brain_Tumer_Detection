@@ -6,7 +6,7 @@ st.title("Brain Tumor Detection")
 
 model = YOLO("best.pt")
 
-uplaoded_file = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "jpeg"])
 
 if uploaded_file:
     img = Image.open(uploaded_file)
